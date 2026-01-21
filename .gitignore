@@ -1,1 +1,10 @@
 vendor/*
+.build/
+.swiftpm/
+DerivedData/
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+.idea/
