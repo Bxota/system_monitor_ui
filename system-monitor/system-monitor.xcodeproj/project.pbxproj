@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E90AD7F72F73F1BC006B1B19 /* libsysmon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E90AD7F62F73F183006B1B19 /* libsysmon.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E90AD7C72F73EFC4006B1B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E90AD7B12F73EFC1006B1B19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90AD7B82F73EFC1006B1B19;
+			remoteInfo = "system-monitor";
+		};
+		E90AD7D12F73EFC4006B1B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E90AD7B12F73EFC1006B1B19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90AD7B82F73EFC1006B1B19;
+			remoteInfo = "system-monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E90AD7B92F73EFC1006B1B19 /* system-monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "system-monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90AD7C62F73EFC4006B1B19 /* system-monitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "system-monitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90AD7D02F73EFC4006B1B19 /* system-monitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "system-monitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90AD7F62F73F183006B1B19 /* libsysmon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsysmon.a; path = ../vendor/sysmon/sysmon/libsysmon.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		E90AD8092F73F5F1006B1B19 /* Exceptions for "system-monitor" folder in "Link Binary With Libraries" phase from "system-monitor" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = E90AD7B62F73EFC1006B1B19 /* Frameworks */;
+			membershipExceptions = (
+				CSysmon/placeholder.c,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E90AD7BB2F73EFC1006B1B19 /* system-monitor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E90AD8092F73F5F1006B1B19 /* Exceptions for "system-monitor" folder in "Link Binary With Libraries" phase from "system-monitor" target */,
+			);
+			path = "system-monitor";
+			sourceTree = "<group>";
+		};
+		E90AD7C92F73EFC4006B1B19 /* system-monitorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "system-monitorTests";
+			sourceTree = "<group>";
+		};
+		E90AD7D32F73EFC4006B1B19 /* system-monitorUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "system-monitorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E90AD7B62F73EFC1006B1B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90AD7F72F73F1BC006B1B19 /* libsysmon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90AD7C32F73EFC4006B1B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90AD7CD2F73EFC4006B1B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E90AD7B02F73EFC1006B1B19 = {
+			isa = PBXGroup;
+			children = (
+				E90AD7BB2F73EFC1006B1B19 /* system-monitor */,
+				E90AD7C92F73EFC4006B1B19 /* system-monitorTests */,
+				E90AD7D32F73EFC4006B1B19 /* system-monitorUITests */,
+				E90AD7F52F73F182006B1B19 /* Frameworks */,
+				E90AD7BA2F73EFC1006B1B19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E90AD7BA2F73EFC1006B1B19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E90AD7B92F73EFC1006B1B19 /* system-monitor.app */,
+				E90AD7C62F73EFC4006B1B19 /* system-monitorTests.xctest */,
+				E90AD7D02F73EFC4006B1B19 /* system-monitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E90AD7F52F73F182006B1B19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E90AD7F62F73F183006B1B19 /* libsysmon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E90AD7B82F73EFC1006B1B19 /* system-monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90AD7DA2F73EFC4006B1B19 /* Build configuration list for PBXNativeTarget "system-monitor" */;
+			buildPhases = (
+				E90AD7B52F73EFC1006B1B19 /* Sources */,
+				E90AD7B62F73EFC1006B1B19 /* Frameworks */,
+				E90AD7B72F73EFC1006B1B19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E90AD7BB2F73EFC1006B1B19 /* system-monitor */,
+			);
+			name = "system-monitor";
+			packageProductDependencies = (
+			);
+			productName = "system-monitor";
+			productReference = E90AD7B92F73EFC1006B1B19 /* system-monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E90AD7C52F73EFC4006B1B19 /* system-monitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90AD7DD2F73EFC4006B1B19 /* Build configuration list for PBXNativeTarget "system-monitorTests" */;
+			buildPhases = (
+				E90AD7C22F73EFC4006B1B19 /* Sources */,
+				E90AD7C32F73EFC4006B1B19 /* Frameworks */,
+				E90AD7C42F73EFC4006B1B19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90AD7C82F73EFC4006B1B19 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E90AD7C92F73EFC4006B1B19 /* system-monitorTests */,
+			);
+			name = "system-monitorTests";
+			packageProductDependencies = (
+			);
+			productName = "system-monitorTests";
+			productReference = E90AD7C62F73EFC4006B1B19 /* system-monitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E90AD7CF2F73EFC4006B1B19 /* system-monitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90AD7E02F73EFC4006B1B19 /* Build configuration list for PBXNativeTarget "system-monitorUITests" */;
+			buildPhases = (
+				E90AD7CC2F73EFC4006B1B19 /* Sources */,
+				E90AD7CD2F73EFC4006B1B19 /* Frameworks */,
+				E90AD7CE2F73EFC4006B1B19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90AD7D22F73EFC4006B1B19 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E90AD7D32F73EFC4006B1B19 /* system-monitorUITests */,
+			);
+			name = "system-monitorUITests";
+			packageProductDependencies = (
+			);
+			productName = "system-monitorUITests";
+			productReference = E90AD7D02F73EFC4006B1B19 /* system-monitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E90AD7B12F73EFC1006B1B19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					E90AD7B82F73EFC1006B1B19 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					E90AD7C52F73EFC4006B1B19 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = E90AD7B82F73EFC1006B1B19;
+					};
+					E90AD7CF2F73EFC4006B1B19 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = E90AD7B82F73EFC1006B1B19;
+					};
+				};
+			};
+			buildConfigurationList = E90AD7B42F73EFC1006B1B19 /* Build configuration list for PBXProject "system-monitor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E90AD7B02F73EFC1006B1B19;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E90AD7BA2F73EFC1006B1B19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E90AD7B82F73EFC1006B1B19 /* system-monitor */,
+				E90AD7C52F73EFC4006B1B19 /* system-monitorTests */,
+				E90AD7CF2F73EFC4006B1B19 /* system-monitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E90AD7B72F73EFC1006B1B19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90AD7C42F73EFC4006B1B19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90AD7CE2F73EFC4006B1B19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E90AD7B52F73EFC1006B1B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90AD7C22F73EFC4006B1B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90AD7CC2F73EFC4006B1B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E90AD7C82F73EFC4006B1B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90AD7B82F73EFC1006B1B19 /* system-monitor */;
+			targetProxy = E90AD7C72F73EFC4006B1B19 /* PBXContainerItemProxy */;
+		};
+		E90AD7D22F73EFC4006B1B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90AD7B82F73EFC1006B1B19 /* system-monitor */;
+			targetProxy = E90AD7D12F73EFC4006B1B19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E90AD7D82F73EFC4006B1B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 63HW7BPHNU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E90AD7D92F73EFC4006B1B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 63HW7BPHNU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E90AD7DB2F73EFC4006B1B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 63HW7BPHNU;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../vendor/sysmon/sysmon/include",
+				);
+				INFOPLIST_KEY_CFBundleDisplayName = "System Monitoring";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"$(PROJECT_DIR)/../vendor/sysmon/sysmon/include",
+					"$(SRCROOT)/CSysmon",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../vendor/sysmon/sysmon",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thomas-leterme.system-monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/system-monitor/CSysmon",
+				);
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E90AD7DC2F73EFC4006B1B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 63HW7BPHNU;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../vendor/sysmon/sysmon/include",
+				);
+				INFOPLIST_KEY_CFBundleDisplayName = "System Monitoring";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"$(PROJECT_DIR)/../vendor/sysmon/sysmon/include",
+					"$(SRCROOT)/CSysmon",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../vendor/sysmon/sysmon",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thomas-leterme.system-monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/system-monitor/CSysmon",
+				);
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E90AD7DE2F73EFC4006B1B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63HW7BPHNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "thomas.leterme.system-monitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/system-monitor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/system-monitor";
+			};
+			name = Debug;
+		};
+		E90AD7DF2F73EFC4006B1B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63HW7BPHNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "thomas.leterme.system-monitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/system-monitor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/system-monitor";
+			};
+			name = Release;
+		};
+		E90AD7E12F73EFC4006B1B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63HW7BPHNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "thomas.leterme.system-monitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "system-monitor";
+			};
+			name = Debug;
+		};
+		E90AD7E22F73EFC4006B1B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63HW7BPHNU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "thomas.leterme.system-monitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "system-monitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E90AD7B42F73EFC1006B1B19 /* Build configuration list for PBXProject "system-monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90AD7D82F73EFC4006B1B19 /* Debug */,
+				E90AD7D92F73EFC4006B1B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90AD7DA2F73EFC4006B1B19 /* Build configuration list for PBXNativeTarget "system-monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90AD7DB2F73EFC4006B1B19 /* Debug */,
+				E90AD7DC2F73EFC4006B1B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90AD7DD2F73EFC4006B1B19 /* Build configuration list for PBXNativeTarget "system-monitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90AD7DE2F73EFC4006B1B19 /* Debug */,
+				E90AD7DF2F73EFC4006B1B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90AD7E02F73EFC4006B1B19 /* Build configuration list for PBXNativeTarget "system-monitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90AD7E12F73EFC4006B1B19 /* Debug */,
+				E90AD7E22F73EFC4006B1B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E90AD7B12F73EFC1006B1B19 /* Project object */;
+}
