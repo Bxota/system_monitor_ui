@@ -4,13 +4,10 @@ import SwiftUI
 // PreferencesView — Métrique top bar + Licence
 // ---------------------------------------------------------------------------
 
-/// Clé UserDefaults pour la métrique affichée dans le menu bar.
-/// Valeurs possibles : "status" (défaut) ou un nom de métrique ex. "cpu.usage_percent"
-let kMenuBarMetricKey = "menuBarMetricKey"
-
 struct PreferencesView: View {
   @EnvironmentObject private var licenseManager: LicenseManager
   @AppStorage(kMenuBarMetricKey) private var metricKey: String = "status"
+  @AppStorage(kMenuBarVisibleKey) private var menuBarVisible: Bool = true
 
   // Options disponibles pour la top bar
   private let menuBarOptions: [(key: String, label: String, icon: String, color: Color)] = [
@@ -31,7 +28,13 @@ struct PreferencesView: View {
 
         // ── Section 1 : Barre de menu ──────────────────────────────────
         PrefSection(icon: "menubar.rectangle", title: "Barre de menu") {
-          VStack(alignment: .leading, spacing: 10) {
+          VStack(alignment: .leading, spacing: 16) {
+            // Toggle pour afficher/masquer l'icône
+            Toggle("Afficher l'icône dans la barre de menu", isOn: $menuBarVisible)
+              .tint(.accentColor)
+            
+            Divider()
+            
             Text("Choisissez ce qui s'affiche dans l'icône de la barre de menu macOS.")
               .font(.callout)
               .foregroundStyle(.secondary)

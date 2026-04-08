@@ -1,3 +1,4 @@
+import AppKit
 import SwiftUI
 
 // ---------------------------------------------------------------------------
@@ -37,9 +38,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 struct SystemMonitorUIApp: App {
   @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
   @StateObject private var appState = AppState()
+  @AppStorage(kMenuBarVisibleKey) private var menuBarVisible: Bool = true
 
   var body: some Scene {
-    // Fenêtre principale
     WindowGroup {
       ContentView()
         .environmentObject(appState.service)
@@ -57,8 +58,7 @@ struct SystemMonitorUIApp: App {
     .windowToolbarStyle(.unified)
     .defaultSize(width: 1100, height: 720)
 
-    // Icône dans la top bar macOS avec métrique configurable en live
-    MenuBarExtra {
+    MenuBarExtra(isInserted: $menuBarVisible) {
       MenuBarView()
         .environmentObject(appState.service)
     } label: {
